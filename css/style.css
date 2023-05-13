@@ -13,3 +13,10 @@
 .navbar a{
     color: #fff;
 }
+.btn{
+    background-image: linear-gradient(#29498d, #6bb8e9);
+    border: none !important;
+    width: 200px;
+    box-shadow: none;
+    font-size: 20px;
+}
