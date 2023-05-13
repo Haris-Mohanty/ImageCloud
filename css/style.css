@@ -20,3 +20,10 @@
     box-shadow: none;
     font-size: 20px;
 }
+.form-control{
+    box-shadow: none !important;
+}
+.nav-tabs .nav-link.active{
+    background-image: linear-gradient(#29498d, #6bb8e9);
+    color: #fff;
+}
