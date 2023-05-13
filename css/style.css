@@ -2,7 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-body{
-    background-color: red;
+.navbar{
+    background-image: linear-gradient(#29498d, #6bb8e9);
+}
+.navbar .navbar-brand{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar a{
+    color: #fff;
 }
