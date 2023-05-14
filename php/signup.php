@@ -30,7 +30,7 @@ else
     )";
     if($db -> query($create_table))
     {
-        
+        $insert_data = 
     }else
     {
         echo "Unable to Create Table!";
