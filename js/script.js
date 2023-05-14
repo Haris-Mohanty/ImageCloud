@@ -13,7 +13,11 @@ $(document).ready(function () {
       cache: false,
       beforeSend: function () {},
       success: function (response) {
-        if(response)
+        if(response.trim() == "success"){
+          swal()
+        }else{
+          
+        }
       },
     });
   });
