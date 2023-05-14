@@ -27,3 +27,24 @@
     background-image: linear-gradient(#29498d, #6bb8e9);
     color: #fff;
 }
+.signup-btn{
+    width: 100%;
+    color: #fff;
+    background-image: linear-gradient(#29498d, #6bb8e9);
+    box-shadow: none;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Audiowide', sans-serif;
+}
+.signup-btn:hover{
+    width: 100%;
+    color: #fff;
+    background-image: linear-gradient(#29498d, #6bb8e9);
+    font-size: 21px;
+    border-radius: 20px;
+    font-family: 'Audiowide', sans-serif;
+    transform: translate(X);
+    transition: 0.3s ease-in-out;
+}

@@ -2,7 +2,7 @@
 $(document).ready(function () {
   $(".signup-form").submit(function (e) {
     e.preventDefault();
-    let formData = new FormData();
+    let formData = new FormData(this);
     //ajax request
     $.ajax({
       type: "POST",
