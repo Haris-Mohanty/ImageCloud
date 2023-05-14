@@ -15,7 +15,16 @@ $get_data = "SELECT * FROM signup";
 $response = $db -> query($get_data);
 
 if($response){
-    echo "found";
+    
+    $insert_data = "INSERT INTO signup(f_name, l_name, email, password, mobile) VALUES ('$f_name', '$l_name', '$email', '$password', '$mobile')";
+        if($db -> query($insert_data))
+        {
+            echo "success";
+        }
+        else
+        {
+            echo "Unable to Insert data!";
+        }
 }
 else
 {
@@ -30,7 +39,15 @@ else
     )";
     if($db -> query($create_table))
     {
-        $insert_data = 
+        $insert_data = "INSERT INTO signup(f_name, l_name, email, password, mobile) VALUES ('$f_name', '$l_name', '$email', '$password', '$mobile')";
+        if($db -> query($insert_data))
+        {
+            echo "success";
+        }
+        else
+        {
+            echo "Unable to Insert data!";
+        }
     }else
     {
         echo "Unable to Create Table!";
