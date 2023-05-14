@@ -10,6 +10,8 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $mobile = $_POST['mobile'];
 
+$get_data = "SELECT * FROM signup";
 
+$response = $db -> query($get_data);
 
 ?>
