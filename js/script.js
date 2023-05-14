@@ -4,8 +4,18 @@ $(document).ready(function () {
     e.preventDefault();
     let formData = new FormData();
     //ajax request
-    
-
+    $.ajax({
+      type: "POST",
+      url: "php/signup.php",
+      data: formData,
+      processData: false,
+      contentType: false,
+      cache: false,
+      beforeSend: function () {},
+      success: function (response) {
+        alert(response);
+      },
+    });
   });
 });
 // SIGNUP CODE END
