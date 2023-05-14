@@ -15,6 +15,7 @@ $(document).ready(function () {
       success: function (response) {
         if(response.trim() == "success"){
           swal("Successfully!", "Signup Successfully!", "success");
+          $(".signup-form")[0].reset();
         }else{
           swal(response.trim(), response.trim(), "error");
         }
