@@ -14,4 +14,12 @@ $get_data = "SELECT * FROM signup";
 
 $response = $db -> query($get_data);
 
+if($response){
+    echo "found";
+}
+else
+{
+    $create_table = 
+}
+
 ?>
