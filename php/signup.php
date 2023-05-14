@@ -19,7 +19,22 @@ if($response){
 }
 else
 {
-    $create_table = 
+    $create_table = "CREATE TABLE signup(
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        f_name VARCHAR(55),
+        l_name VARCHAR(55),
+        email VARCHAR(55),
+        password VARCHAR(55),
+        mobile VARCHAR(55),
+        PRIMARY KEY(id)
+    )";
+    if($db -> query($create_table))
+    {
+        
+    }else
+    {
+        echo "Unable to Create Table!";
+    }
 }
 
 ?>
