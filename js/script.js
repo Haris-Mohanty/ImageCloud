@@ -14,9 +14,9 @@ $(document).ready(function () {
       beforeSend: function () {},
       success: function (response) {
         if(response.trim() == "success"){
-          swal()
+          swal("Successfully!", "Signup Successfully!", "success");
         }else{
-          
+          swal(response.trim(), response.trim(), "error");
         }
       },
     });
