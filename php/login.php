@@ -12,7 +12,13 @@ $response = $db -> query($check_email);
 
 if($response -> num_rows != 0)
 {
-    $check_pass = 
+    $check_pass = "SELECT password FROM signup WHERE password = '$password'";
+
+    $pass_res = $db -> query($check_pass);
+    if($pass_res -> num_rows != 0)
+    {
+        echo ""
+    }
 }
 
 
