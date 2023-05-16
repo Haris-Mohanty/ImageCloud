@@ -13,10 +13,10 @@ $(document).ready(function () {
       cache: false,
       beforeSend: function () {},
       success: function (response) {
-        if(response.trim() == "success"){
+        if (response.trim() == "success") {
           swal("Successfully!", "Signup Successfully!", "success");
           $(".signup-form")[0].reset();
-        }else{
+        } else {
           swal(response.trim(), response.trim(), "error");
         }
       },
@@ -24,3 +24,9 @@ $(document).ready(function () {
   });
 });
 // SIGNUP CODE END
+
+// LOGIN CODE START
+$(document).ready(function () {
+  $(".login-btn")
+});
+// LOGIN CODE END
