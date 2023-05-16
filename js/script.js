@@ -30,7 +30,20 @@ $(document).ready(function () {
   $(".login-btn").submit(function (e) {
     e.preventDefault();
     //ajax request
-    $.ajax({});
+    $.ajax({
+      type: "POST",
+      url: "php/login.php",
+      data: {
+        email: $(".email").val(),
+        password: $(".password").val(),
+      },
+      processData: false,
+      contentType: false,
+      beforeSend: function () {},
+      success: function (response) {
+        alert(response);
+      },
+    });
   });
 });
 // LOGIN CODE END
