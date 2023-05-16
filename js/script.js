@@ -27,6 +27,10 @@ $(document).ready(function () {
 
 // LOGIN CODE START
 $(document).ready(function () {
-  $(".login-btn")
+  $(".login-btn").submit(function (e) {
+    e.preventDefault();
+    //ajax request
+    $.ajax({});
+  });
 });
 // LOGIN CODE END
