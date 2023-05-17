@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+.navbar{
+    background-image: linear-gradient(#29498d, #6bb8e9);
+}
+.navbar .navbar-brand{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar a{
+    color: #fff;
+}
+.btn{
+    background-image: linear-gradient(#29498d, #6bb8e9);
+    border: none !important;
+    width: 200px;
+    box-shadow: none;
+    font-size: 20px;
+}
+.form-control{
+    box-shadow: none !important;
+    width: 400px;
+}
