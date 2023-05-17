@@ -27,18 +27,17 @@ $(document).ready(function () {
 
 // LOGIN CODE START
 $(document).ready(function () {
-  $(".login-btn").submit(function (e) {
+  $(".login-form").submit(function (e) {
     e.preventDefault();
+    let formData = new FormData(this);
     //ajax request
     $.ajax({
       type: "POST",
       url: "php/login.php",
-      data: {
-        email: $(".email").val(),
-        password: $(".password").val(),
-      },
+      data: formData,
       processData: false,
       contentType: false,
+      cache: false,
       beforeSend: function () {},
       success: function (response) {
         alert(response);
