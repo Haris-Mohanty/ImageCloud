@@ -41,6 +41,13 @@ $(document).ready(function () {
       beforeSend: function () {},
       success: function (response) {
         if(response.trim() == "success")
+        {
+          swal("Success", "success", "success");
+        }
+        else
+        {
+          swal(response.trim(), "Please Check Again!", "error");
+        }
       },
     });
   });
