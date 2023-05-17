@@ -22,8 +22,10 @@ if($response -> num_rows != 0)
     }
     else
     {
-        echo "f";
+        echo "Incorrect Password!";
     }
+}else{
+    echo "Wrong Email Address!";
 }
 
 
