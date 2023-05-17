@@ -42,7 +42,7 @@ $(document).ready(function () {
       success: function (response) {
         if(response.trim() == "success")
         {
-          swal("Success", "success", "success");
+          window.location = "profile/profile.html";
         }
         else
         {
