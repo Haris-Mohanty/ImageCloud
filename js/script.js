@@ -30,6 +30,7 @@ $(document).ready(function () {
   $(".login-form").submit(function (e) {
     e.preventDefault();
     let formData = new FormData(this);
+    let loginBtn = document.querySelector(".login-btn");
     //ajax request
     $.ajax({
       type: "POST",
@@ -42,7 +43,10 @@ $(document).ready(function () {
       success: function (response) {
         if(response.trim() == "success")
         {
-          window.location = "profile/profile.html";
+          loginBtn.innerHTML = "Please Wait...";
+          setTimeout(() => {
+            window.location = "profile/profile.html";
+          }, 3000);
         }
         else
         {
