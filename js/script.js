@@ -30,6 +30,8 @@ $(document).ready(function () {
   $(".login-form").submit(function (e) {
     e.preventDefault();
     let formData = new FormData(this);
+    let email = $(".email").val();
+    console.log(email);
     let loginBtn = document.querySelector(".login-btn");
     //ajax request
     $.ajax({
@@ -45,7 +47,7 @@ $(document).ready(function () {
         {
           loginBtn.innerHTML = "Please Wait...";
           setTimeout(() => {
-            sessionStorage.setItem
+            sessionStorage.setItem("username", email);
             window.location = "profile/profile.html";
           }, 3000);
         }
