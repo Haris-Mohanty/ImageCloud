@@ -19,7 +19,18 @@ uploadInput.addEventListener("change", () => {
   let uploadBtn = document.querySelector(".upload-btn");
   uploadBtn.addEventListener("click", () => {
     // ajax request
-    $.ajax({});
+    $.ajax({
+      type: "POST",
+      url: "php/pics.php",
+      data: {
+        pic: uploadInput.val(),
+      },
+      cache: false,
+      beforeSend: function () {},
+      success: function (response) {
+        alert(response);
+      },
+    });
   });
 });
 // UPLOAD PIC CODE END
