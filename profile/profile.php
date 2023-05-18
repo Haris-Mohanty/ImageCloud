@@ -79,7 +79,7 @@ if($user_res -> num_rows != 0)
                         <input type="file" class="form-control">
                         <span class="input-group-text btn text-white">Upload Pic</span>
                     </div> 
-                    <button class="btn mx-2 text-white">Log Out</button>
+                    <button class="btn mx-2 text-white logout-btn">Log Out</button>
                 </ul>
             </div>
         </div>
