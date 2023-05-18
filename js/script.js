@@ -31,7 +31,6 @@ $(document).ready(function () {
     e.preventDefault();
     let formData = new FormData(this);
     let email = $(".email").val();
-    console.log(email);
     let loginBtn = document.querySelector(".login-btn");
     //ajax request
     $.ajax({

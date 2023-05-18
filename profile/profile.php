@@ -1,3 +1,18 @@
+
+<?php
+
+// GET DATA
+require_once("../Common_files/php/database.php");
+
+session_start();
+$username = $_SESSION['username'];
+
+$get_data = "SELECT * FROM students WHERE email = '$username'";
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
