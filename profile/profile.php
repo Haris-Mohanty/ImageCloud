@@ -9,7 +9,7 @@ $username = $_SESSION['username'];
 
 $get_data = "SELECT * FROM students WHERE email = '$username'";
 
-
+$stu_res = $db -> query($get_data)
 
 ?>
 
