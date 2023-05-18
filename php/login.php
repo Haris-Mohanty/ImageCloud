@@ -19,6 +19,8 @@ if($response -> num_rows != 0)
     if($pass_res -> num_rows != 0)
     {
         echo "success";
+        session_start();
+        $_SESSION['username'] = $email;
     }
     else
     {

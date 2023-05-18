@@ -5,12 +5,17 @@
 require_once("../Common_files/php/database.php");
 
 session_start();
-$username = $_SESSION['username'];
+  $username = $_SESSION['username'];
 
-$get_data = "SELECT * FROM students WHERE email = '$username'";
+$get_data = "SELECT * FROM signup WHERE email = '$username'";
 
-$stu_res = $db -> query($get_data)
+$user_res = $db -> query($get_data);
+$all_user_data = "";
 
+if($user_res -> num_rows != 0)
+{
+    $all_user_data = $user_res -> fetch_assoc();
+}
 ?>
 
 <!DOCTYPE html>
@@ -61,7 +66,7 @@ $stu_res = $db -> query($get_data)
 <body>
 
     <!-- NAV CODE START -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <img src="../Image/login-2.jfif.jpg" class="rounded-circle mx-2" width="48" height="48" alt="">
             <a href="#" class="navbar-brand">Image Cloud</a>

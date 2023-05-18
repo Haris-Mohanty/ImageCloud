@@ -47,7 +47,7 @@ $(document).ready(function () {
           loginBtn.innerHTML = "Please Wait...";
           setTimeout(() => {
             sessionStorage.setItem("username", email);
-            window.location = "profile/profile.html";
+            window.location = "profile/profile.php";
           }, 3000);
         }
         else
