@@ -21,9 +21,9 @@ uploadInput.addEventListener("change", () => {
     // ajax request
     $.ajax({
       type: "POST",
-      url: "php/pics.php",
+      url: "../php/pics.php",
       data: {
-        pic: uploadInput.val(),
+        pic: uploadInput.value,
       },
       cache: false,
       beforeSend: function () {},
