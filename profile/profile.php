@@ -69,7 +69,7 @@ if($user_res -> num_rows != 0)
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <img src="../Image/login-2.jfif.jpg" class="rounded-circle mx-2" width="48" height="48" alt="">
-            <a href="#" class="navbar-brand">Image Cloud</a>
+            <a href="#" class="navbar-brand"><?php echo  ?></a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavBar">
                 <span class="navbar-toggler-icon"></span>
             </button>
