@@ -12,3 +12,7 @@ logoutBtn.addEventListener("click", () => {
   window.location = "../index.html";
 });
 // LOGOUT CODE END
+
+// UPLOAD PIC CODE START
+
+// UPLOAD PIC CODE END

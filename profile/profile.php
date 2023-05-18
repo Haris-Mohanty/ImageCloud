@@ -76,8 +76,8 @@ if($user_res -> num_rows != 0)
             <div class="navbar-collapse collapse" id="myNavBar">
                 <ul class="navbar-nav justify-content-end w-100">
                     <div class="input-group w-50">
-                        <input type="file" class="form-control">
-                        <span class="input-group-text btn text-white">Upload Pic</span>
+                        <input type="file" class="form-control upload-input">
+                        <span class="input-group-text btn text-white upload-btn">Upload Pic</span>
                     </div> 
                     <button class="btn mx-2 text-white logout-btn">Log Out</button>
                 </ul>
