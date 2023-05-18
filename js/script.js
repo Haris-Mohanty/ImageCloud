@@ -48,7 +48,7 @@ $(document).ready(function () {
           setTimeout(() => {
             sessionStorage.setItem("username", email);
             window.location = "profile/profile.php";
-          }, 3000);
+          }, 2000);
         }
         else
         {
