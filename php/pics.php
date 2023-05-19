@@ -33,7 +33,7 @@ else
     PRIMARY KEY(id)
   )";
   if($db -> query($create_table)){
-    $insert_data = "INSERT INTO pics"
+    $insert_data = "INSERT INTO pics() VALUES ()";
   }
 }
 
