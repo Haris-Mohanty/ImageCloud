@@ -23,7 +23,13 @@ $response = $db -> query($get_data);
 
 if($response)
 {
-
+  $insert_data = "INSERT INTO pics(pic) VALUES ('$image')";
+  if($db -> query($insert_data)){
+    echo "success";
+  }else
+  {
+    echo "Unable to Insert Data!";
+  }
 }
 else
 {
@@ -33,7 +39,15 @@ else
     PRIMARY KEY(id)
   )";
   if($db -> query($create_table)){
-    $insert_data = "INSERT INTO pics() VALUES ()";
+    $insert_data = "INSERT INTO pics(pic) VALUES ('$image')";
+    if($db -> query($insert_data)){
+      echo "success";
+    }else
+    {
+      echo "Unable to Insert Data!";
+    }
+  }else{
+    echo "Unable to Create Table!";
   }
 }
 
