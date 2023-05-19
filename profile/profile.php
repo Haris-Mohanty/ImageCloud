@@ -66,7 +66,7 @@ if($user_res -> num_rows != 0)
 <body>
 
     <!-- NAV CODE START -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container-fluid">
             <img src="../Image/login-2.jfif.jpg" class="rounded-circle mx-2" width="48" height="48" alt="">
             <a href="#" class="navbar-brand"><?php echo $all_user_data['f_name']; echo "\r"; echo $all_user_data['l_name']; ?></a>
@@ -75,17 +75,19 @@ if($user_res -> num_rows != 0)
             </button>
             <div class="navbar-collapse collapse" id="myNavBar">
                 <ul class="navbar-nav justify-content-end w-100">
-                    <div class="input-group w-50">
-                        <input type="file" class="form-control upload-input">
-                        <span class="input-group-text btn text-white upload-btn">Upload Pic</span>
-                    </div> 
+
+                    <form class="input-form">
+                        <input type="file" id="file" name="files" class="form-control upload-input">
+                        <button class="input-group-text btn text-white upload-btn float-end">Upload Pic</button>
+                    </form>
+
                     <button class="btn mx-2 text-white logout-btn">Log Out</button>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- NAV CODE END -->
-    <br><br>
+    <br><br><br>
 
     <!-- MAIN PAGE CODE START -->
     <div class="container mt-5">

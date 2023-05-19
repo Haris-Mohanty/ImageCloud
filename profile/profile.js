@@ -15,22 +15,24 @@ logoutBtn.addEventListener("click", () => {
 
 // UPLOAD PIC CODE START
 let uploadInput = document.querySelector(".upload-input");
+$(".upload-btn").addClass("disabled");
 uploadInput.addEventListener("change", () => {
-  let uploadBtn = document.querySelector(".upload-btn");
-  uploadBtn.addEventListener("click", () => {
-    // ajax request
+  $(".upload-btn").removeClass("disabled");
+  $(".input-form").on("submit", function (e) {
+    e.preventDefault();
     $.ajax({
       type: "POST",
       url: "../php/pics.php",
-      data: {
-        pic: uploadInput.value,
-      },
+      data: new FormData(this),
       cache: false,
+      contentType : false,
+      processData : false,
       beforeSend: function () {},
       success: function (response) {
         alert(response);
       },
     });
+
   });
 });
 // UPLOAD PIC CODE END

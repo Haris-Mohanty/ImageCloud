@@ -3,7 +3,8 @@
 //Database Linked
 require_once("../Common_files/php/database.php");
 
-$pic = $_FILES['pic'];
+$pic = $_FILES['files'];
+
 
 $image = "";
 
@@ -23,7 +24,7 @@ $response = $db -> query($get_data);
 
 if($response)
 {
-  $insert_data = "INSERT INTO pics(pic) VALUES ('$image')";
+  $insert_data = "INSERT INTO pics (pic) VALUES ('$image')";
   if($db -> query($insert_data)){
     echo "success";
   }else
@@ -35,7 +36,7 @@ else
 {
   $create_table = "CREATE TABLE pics(
     id INT(11) NOT NULL AUTO_INCREMENT,
-    pic BLOB,
+    pic LONGBLOB,
     PRIMARY KEY(id)
   )";
   if($db -> query($create_table)){
