@@ -25,14 +25,15 @@ uploadInput.addEventListener("change", () => {
       url: "../php/pics.php",
       data: new FormData(this),
       cache: false,
-      contentType : false,
-      processData : false,
+      contentType: false,
+      processData: false,
       beforeSend: function () {},
       success: function (response) {
-        alert(response);
+        if (response.trim() == "success") {
+          
+        }
       },
     });
-
   });
 });
 // UPLOAD PIC CODE END
