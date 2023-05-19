@@ -27,7 +27,14 @@ if($response)
 }
 else
 {
-  $create_table = 
+  $create_table = "CREATE TABLE pics(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    pic BLOB,
+    PRIMARY KEY(id)
+  )";
+  if($db -> query($create_table)){
+    $insert_data = "INSERT INTO pics"
+  }
 }
 
 
