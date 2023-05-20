@@ -1,7 +1,7 @@
 
 <?php
 
-$db = new mysqli("localhost", "root", "8658763042@Haris", "imagecloud");
+$db = new mysqli("localhost", "root", "865876@", "imagecloud");
 
 if($db -> connect_error){
     echo "Database Not connected!";
