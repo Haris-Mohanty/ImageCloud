@@ -30,7 +30,10 @@ uploadInput.addEventListener("change", () => {
       beforeSend: function () {},
       success: function (response) {
         if (response.trim() == "success") {
+          swal("Inserted Successfully!", "The Image has been Inserted Successfully!", "success");
           
+        } else {
+          swal(response.trim(), response.trim(), "error");
         }
       },
     });
