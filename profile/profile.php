@@ -91,7 +91,7 @@ if($user_res -> num_rows != 0)
 
     <!-- MAIN PAGE CODE START -->
     <div class="container mt-5">
-        <div class="row">
+        <div class="row all-image-field">
             
         </div>
     </div>
