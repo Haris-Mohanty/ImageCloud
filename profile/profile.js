@@ -43,3 +43,6 @@ uploadInput.addEventListener("change", () => {
   });
 });
 // UPLOAD PIC CODE END
+
+
+const get

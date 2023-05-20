@@ -6,7 +6,6 @@ require_once("../Common_files/php/database.php");
 $pic = $_FILES['files'];
 $username = $_POST['username'];
 
-
 $image = "";
 
 $location = "";
@@ -41,6 +40,7 @@ else
     username VARCHAR(55),
     PRIMARY KEY(id)
   )";
+  
   if($db -> query($create_table)){
     $insert_data = "INSERT INTO pics(pic, username) VALUES ('$image', '$username')";
     if($db -> query($insert_data)){

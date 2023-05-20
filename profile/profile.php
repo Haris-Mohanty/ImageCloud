@@ -92,20 +92,7 @@ if($user_res -> num_rows != 0)
     <!-- MAIN PAGE CODE START -->
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-2 mb-3 text-center">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Welcome</h5>
-                    </div>
-                    <div class="card-body">
-                        <img src="../Image/login-2.jfif.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <button class="btn text-white w-75 mx-1"><i class="fa fa-eye"></i></button>
-                        <button class="btn text-white w-25"><i class="fa fa-trash"></i></button>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     <!-- MAIN PAGE CODE END -->
