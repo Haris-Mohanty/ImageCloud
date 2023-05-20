@@ -4,6 +4,7 @@
 require_once("../Common_files/php/database.php");
 
 $pic = $_FILES['files'];
+$username = $_POST['username'];
 
 
 $image = "";
@@ -24,7 +25,7 @@ $response = $db -> query($get_data);
 
 if($response)
 {
-  $insert_data = "INSERT INTO pics (pic) VALUES ('$image')";
+  $insert_data = "INSERT INTO pics (pic, username) VALUES ('$image', '$username')";
   if($db -> query($insert_data)){
     echo "success";
   }else
@@ -37,10 +38,11 @@ else
   $create_table = "CREATE TABLE pics(
     id INT(11) NOT NULL AUTO_INCREMENT,
     pic LONGBLOB,
+    username VARCHAR(55),
     PRIMARY KEY(id)
   )";
   if($db -> query($create_table)){
-    $insert_data = "INSERT INTO pics(pic) VALUES ('$image')";
+    $insert_data = "INSERT INTO pics(pic, username) VALUES ('$image', '$username')";
     if($db -> query($insert_data)){
       echo "success";
     }else
