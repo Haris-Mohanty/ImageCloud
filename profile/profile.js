@@ -52,7 +52,7 @@ uploadInput.addEventListener("change", () => {
 let allImageEl = document.querySelector(".all-image-field");
 
 const getDataFunc = () => {
-  allImageEl.innerHTML += `
+  allImageEl.innerHTML = `
 
   <div class="col-md-2 mb-3 text-center">
                 <div class="card">
