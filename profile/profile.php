@@ -24,11 +24,7 @@ $get_datar = "SELECT * FROM pics WHERE email = '$username'";
 $user_ress = $db -> query($get_datar);
 $all_user_dataa = "";
 
-if($user_ress -> num_rows != 0)
-{
-    $all_user_dataa = $user_ress -> fetch_assoc();
-}
-print_r($all_user_dataa)
+
 ?>
 
 <!DOCTYPE html>
