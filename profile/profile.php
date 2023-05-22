@@ -96,9 +96,7 @@ if($user_res -> num_rows != 0)
         <div class="row all-image-field">
         <div class="col-md-2 mb-3 text-center">
 
-
-        
-
+      <!-- CARD START -->
         <?php
                     
                     $pics = "SELECT * FROM pics WHERE username = '$username'";
@@ -110,30 +108,28 @@ if($user_res -> num_rows != 0)
 
 
                           echo  "<div class='card'>
-                    <div class='card-header'>
-                        <h5>Welcome</h5>
-                    </div>
+                                    <div class='card-header'>
+                                        <h5>Welcome</h5>
+                                    </div>
         
                             
-                            <div class='card-body'>";
-                            $image = "data:image/png;base64,".base64_encode($data['pic']);
-                                echo "<img src='".$image."' class='w-100'>";
-                             echo "</div>
+                                        <div class='card-body'>";
+                                            $image = "data:image/png;base64,".base64_encode($data['pic']);
+                                        echo "<img src='".$image."' class='w-100'>";
+                                    echo "</div>
 
 
-                            <div class='card-footer d-flex justify-content-between'>
-                        <button class='btn text-white w-75 mx-1'><i class='fa fa-eye'></i></button>
-                        <button class='btn text-white w-25'><i class='fa fa-trash'></i></button>
-                    </div>
-        </div>";
+                                        <div class='card-footer d-flex justify-content-between'>
+                                           <button class='btn text-white w-75 mx-1'><i class='fa fa-eye'></i></button>
+                                           <button class='btn text-white w-25'><i class='fa fa-trash'></i></button>
+                                        </div>
+                             </div>";
         
                         }
                     }
 
                     ?>
-
-                    
-
+                    <!-- CARD END -->
 
 
             </div>
