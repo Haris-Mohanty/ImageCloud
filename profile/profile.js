@@ -33,7 +33,7 @@ uploadInput.addEventListener("change", () => {
       success: function (response) {
         if (response.trim() == "success") {
           // $(".input-form").trigger('reset');
-          getDataFunc();
+          // getDataFunc();
           swal(
             "Inserted Successfully!",
             "The Image has been Inserted Successfully!",
@@ -51,23 +51,10 @@ uploadInput.addEventListener("change", () => {
 
 let allImageEl = document.querySelector(".all-image-field");
 
-const getDataFunc = () => {
-  allImageEl.innerHTML = `
+// const getDataFunc = () => {
+//   allImageEl.innerHTML = `
 
-  <div class="col-md-2 mb-3 text-center">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Welcome</h5>
-                    </div>
-                    <div class="card-body">
-                        <img src="../Image/login-2.jfif.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="card-footer d-flex justify-content-between">
-                        <button class="btn text-white w-75 mx-1"><i class="fa fa-eye"></i></button>
-                        <button class="btn text-white w-25"><i class="fa fa-trash"></i></button>
-                    </div>
-                </div>
-            </div>
+  
 
-  `;
-};
+//   `;
+// };
