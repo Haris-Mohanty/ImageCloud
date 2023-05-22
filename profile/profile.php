@@ -16,6 +16,19 @@ if($user_res -> num_rows != 0)
 {
     $all_user_data = $user_res -> fetch_assoc();
 }
+
+
+
+$get_datar = "SELECT * FROM pics WHERE email = '$username'";
+
+$user_ress = $db -> query($get_datar);
+$all_user_dataa = "";
+
+if($user_ress -> num_rows != 0)
+{
+    $all_user_dataa = $user_ress -> fetch_assoc();
+}
+print_r($all_user_dataa)
 ?>
 
 <!DOCTYPE html>
@@ -66,7 +79,7 @@ if($user_res -> num_rows != 0)
 <body>
 
     <!-- NAV CODE START -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <img src="../Image/login-2.jfif.jpg" class="rounded-circle mx-2" width="48" height="48" alt="">
             <a href="#" class="navbar-brand"><?php echo $all_user_data['f_name']; echo "\r"; echo $all_user_data['l_name']; ?></a>
@@ -88,6 +101,7 @@ if($user_res -> num_rows != 0)
     </nav>
     <!-- NAV CODE END -->
     <br><br><br>
+
 
     <!-- MAIN PAGE CODE START -->
     <div class="container mt-5">
