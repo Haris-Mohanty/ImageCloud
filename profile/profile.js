@@ -33,7 +33,7 @@ uploadInput.addEventListener("change", () => {
       success: function (response) {
         if (response.trim() == "success") {
           // $(".input-form").trigger('reset');
-          // getDataFunc();
+         
           swal(
             "Inserted Successfully!",
             "The Image has been Inserted Successfully!",
@@ -48,13 +48,3 @@ uploadInput.addEventListener("change", () => {
   });
 });
 // UPLOAD PIC CODE END
-
-let allImageEl = document.querySelector(".all-image-field");
-
-// const getDataFunc = () => {
-//   allImageEl.innerHTML = `
-
-  
-
-//   `;
-// };

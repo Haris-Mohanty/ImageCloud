@@ -94,7 +94,7 @@ if($user_res -> num_rows != 0)
     <!-- MAIN PAGE CODE START -->
     <div class="container mt-5">
         <div class="row all-image-field">
-        <div class="col-md-2 mb-3 text-center">
+         <!-- <div class="col-md-2 mb-3 text-center"> -->
 
       <!-- CARD START -->
         <?php
@@ -107,7 +107,8 @@ if($user_res -> num_rows != 0)
                         while($data = $pic_res -> fetch_assoc()){
 
 
-                          echo  "<div class='card'>
+                echo "<div class='col-md-2 mb-3 text-center'>
+                             <div class='card'>
                                     <div class='card-header'>
                                         <h5>Welcome</h5>
                                     </div>
@@ -123,16 +124,16 @@ if($user_res -> num_rows != 0)
                                            <button class='btn text-white w-75 mx-1'><i class='fa fa-eye'></i></button>
                                            <button class='btn text-white w-25'><i class='fa fa-trash'></i></button>
                                         </div>
-                             </div>";
+                                 </div>
+                        </div>";
         
                         }
                     }
-
                     ?>
                     <!-- CARD END -->
 
 
-            </div>
+            
         </div>
     </div>
     <!-- MAIN PAGE CODE END -->
