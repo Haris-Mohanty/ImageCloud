@@ -31,18 +31,20 @@ uploadInput.addEventListener("change", () => {
       processData: false,
       beforeSend: function () {},
       success: function (response) {
-        if (response.trim() == "success") {
-          // $(".input-form").trigger('reset');
+        // if (response.trim() == "success") {
+          alert(response);
+
+
          
-          swal(
-            "Inserted Successfully!",
-            "The Image has been Inserted Successfully!",
-            "success"
-          );
+          // swal(
+          //   "Inserted Successfully!",
+          //   "The Image has been Inserted Successfully!",
+          //   "success"
+          // );
           // window.location = location.href;
-        } else {
-          swal(response.trim(), response.trim(), "error");
-        }
+        // } else {
+        //   swal(response.trim(), response.trim(), "error");
+        // }
       },
     });
   });
