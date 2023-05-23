@@ -67,7 +67,7 @@ if($user_res -> num_rows != 0)
 <body>
 
     <!-- NAV CODE START -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container-fluid">
             <img src="../Image/login-2.jfif.jpg" class="rounded-circle mx-2" width="48" height="48" alt="">
             <a href="#" class="navbar-brand"><?php echo $all_user_data['f_name']; echo "\r"; echo $all_user_data['l_name']; ?></a>
@@ -108,7 +108,7 @@ if($user_res -> num_rows != 0)
 
 
                 echo "<div class='col-md-2 mb-3 text-center'>
-                             <div class='card'>
+                             <div class='card section6-card1-diagonal'>
                                     <div class='card-header'>
                                         <h5>Welcome</h5>
                                     </div>
