@@ -55,7 +55,34 @@ $(".del-btn").on("click", function(){
     },
     beforeSend : function(){},
     success : function(response){
-      alert(response);
+      //swal start
+      swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this imaginary file!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then(async (willDelete) => {
+        if (willDelete) {
+          let response = await ajaxDeleteById(
+            id,
+            "category",
+            "show-category-loader"
+          );
+          if (response.trim() == "success") {
+            getCategoryFunc();
+            swal("Category Deleted", response.trim(), "success");
+          } else {
+            swal(response.trim(), response.trim(), "warning");
+          }
+          swal("Poof! Your imaginary file has been deleted!", {
+            icon: "success",
+          });
+        } else {
+          swal("Your imaginary file is safe!");
+        }
+      });
+      //swal end
     }
   });
 });

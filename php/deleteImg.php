@@ -13,6 +13,4 @@ if($db -> query($deleteImg)){
     echo "Unable to Delete Image!";
 }
 
-
-
 ?>
