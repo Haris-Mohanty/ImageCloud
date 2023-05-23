@@ -47,6 +47,16 @@ $(".del-btn").on("click", function(){
   let parent = this.parentElement.parentElement;
   let id = $(parent).attr("INDEX");
   // ajax request
-  $.ajax({});
+  $.ajax({
+    type : "POST",
+    url : "../php/deleteImg.php",
+    data : {
+      id : id
+    },
+    beforeSend : function(){},
+    success : function(response){
+      alert(response);
+    }
+  });
 });
 // DELETE IMAGE CODE END
