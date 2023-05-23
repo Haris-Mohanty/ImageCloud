@@ -6,7 +6,7 @@ require_once("../Common_files/php/database.php");
 $pic = $_FILES['files'];
 $username = $_POST['username'];
 
-$picName = $pic['name'];
+$imgName = $pic['name'];
 
 
 $image = "";
@@ -27,7 +27,7 @@ $response = $db -> query($get_data);
 
 if($response)
 {
-  $insert_data = "INSERT INTO pics (pic, username) VALUES ('$image', '$username')";
+  $insert_data = "INSERT INTO pics(pic, username, imgName) VALUES ('$image', '$username', '$imgName')";
   if($db -> query($insert_data)){
     echo "success";
   }else
@@ -41,11 +41,12 @@ else
     id INT(11) NOT NULL AUTO_INCREMENT,
     pic LONGBLOB,
     username VARCHAR(55),
+    imgName VARCHAR(55),
     PRIMARY KEY(id)
   )";
   
   if($db -> query($create_table)){
-    $insert_data = "INSERT INTO pics(pic, username) VALUES ('$image', '$username')";
+    $insert_data = "INSERT INTO pics(pic, username, imgName) VALUES ('$image', '$username', '$imgName')";
     if($db -> query($insert_data)){
       echo "success";
     }else
