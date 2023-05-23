@@ -31,20 +31,11 @@ uploadInput.addEventListener("change", () => {
       processData: false,
       beforeSend: function () {},
       success: function (response) {
-        // if (response.trim() == "success") {
-          alert(response);
-
-
-         
-          // swal(
-          //   "Inserted Successfully!",
-          //   "The Image has been Inserted Successfully!",
-          //   "success"
-          // );
-          // window.location = location.href;
-        // } else {
-        //   swal(response.trim(), response.trim(), "error");
-        // }
+        if (response.trim() == "success") {
+          swal("Inserted Successfully!", "The Image has been Inserted Successfully!", "success");
+        } else {
+          swal(response.trim(), response.trim(), "error");
+        }
       },
     });
   });
