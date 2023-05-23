@@ -62,15 +62,9 @@ $(".del-btn").on("click", function(){
         icon: "warning",
         buttons: true,
         dangerMode: true,
-      }).then(async (willDelete) => {
+      }).then((willDelete) => {
         if (willDelete) {
-          let response = await ajaxDeleteById(
-            id,
-            "category",
-            "show-category-loader"
-          );
           if (response.trim() == "success") {
-            getCategoryFunc();
             swal("Category Deleted", response.trim(), "success");
           } else {
             swal(response.trim(), response.trim(), "warning");
