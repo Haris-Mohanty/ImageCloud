@@ -65,7 +65,7 @@ $(".del-btn").on("click", function(){
       }).then((willDelete) => {
         if (willDelete) {
           if (response.trim() == "success") {
-            swal("Category Deleted", response.trim(), "success");
+            swal("Image Deleted", "Image Delete Successfully!", "success");
           } else {
             swal(response.trim(), response.trim(), "warning");
           }
