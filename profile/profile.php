@@ -114,7 +114,7 @@ if($user_res -> num_rows != 0)
                                     </div>
         
                             
-                                        <div class='card-body'>";
+                                        <div class='card-body sm-size'>";
                                             $image = "data:image/png;base64,".base64_encode($data['pic']);
                                         echo "<img src='".$image."' class='w-100'>";
                                     echo "</div>
