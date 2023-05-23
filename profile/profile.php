@@ -108,7 +108,7 @@ if($user_res -> num_rows != 0)
 
 
                 echo "<div class='col-md-2 mb-3 text-center'>
-                             <div class='card section6-card1-diagonal'>
+                             <div class='card'>
                                     <div class='card-header'>
                                         <p>".$data['imgName']."</p>
                                     </div>
