@@ -41,3 +41,7 @@ uploadInput.addEventListener("change", () => {
   });
 });
 // UPLOAD PIC CODE END
+
+// DELETE IMAGE CODE START
+
+// DELETE IMAGE CODE END
