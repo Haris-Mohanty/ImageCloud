@@ -108,7 +108,7 @@ if($user_res -> num_rows != 0)
 
 
                 echo "<div class='col-md-2 mb-3 text-center'>
-                             <div class='card'>
+                             <div class='card' index=".$data['id'].">
                                     <div class='card-header'>
                                         <p>".$data['imgName']."</p>
                                     </div>
@@ -122,7 +122,7 @@ if($user_res -> num_rows != 0)
 
                                         <div class='card-footer d-flex justify-content-between'>
                                            <button class='btn text-white w-75 mx-1'><i class='fa fa-eye'></i></button>
-                                           <button class='btn text-white w-25'><i class='fa fa-trash'></i></button>
+                                           <button class='btn text-white del-btn w-25'><i class='fa fa-trash'></i></button>
                                         </div>
                                  </div>
                         </div>";

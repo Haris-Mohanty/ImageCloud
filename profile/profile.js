@@ -43,5 +43,9 @@ uploadInput.addEventListener("change", () => {
 // UPLOAD PIC CODE END
 
 // DELETE IMAGE CODE START
-
+$(".del-btn").on("click", function(){
+  let parent = this.parentElement.parentElement;
+  let id = $(parent).attr("INDEX");
+  console.log(id)
+});
 // DELETE IMAGE CODE END
