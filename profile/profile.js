@@ -55,28 +55,13 @@ $(".del-btn").on("click", function(){
     },
     beforeSend : function(){},
     success : function(response){
-      //swal start
-      swal({
-        title: "Are you sure?",
-        text: "Once deleted, you will not be able to recover this imaginary file!",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true,
-      }).then((willDelete) => {
-        if (willDelete) {
-          if (response.trim() == "success") {
-            swal("Image Deleted", "Image Delete Successfully!", "success");
-          } else {
-            swal(response.trim(), response.trim(), "warning");
-          }
-          swal("Poof! Your imaginary file has been deleted!", {
-            icon: "success",
-          });
-        } else {
-          swal("Your imaginary file is safe!");
-        }
-      });
-      //swal end
+
+      if (response.trim() == "success") {
+        swal("Image Deleted", "Image Delete Successfully!", "success");
+      } else {
+        swal(response.trim(), response.trim(), "warning");
+      }
+     
     }
   });
 });
