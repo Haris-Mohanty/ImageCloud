@@ -66,3 +66,8 @@ $(".del-btn").on("click", function(){
   });
 });
 // DELETE IMAGE CODE END
+
+
+// VIEW CODE START
+
+// VIEW CODE END
