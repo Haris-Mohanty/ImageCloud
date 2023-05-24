@@ -72,8 +72,11 @@ $(".del-btn").on("click", function(){
 let allViewBtn = document.querySelectorAll(".view-btn");
  let i;
  for(i=0; i<allViewBtn.length; i++){
-  allViewBtn[i].addEventListener("click", ()=>{
+  allViewBtn[i].onclick = function(){
     let parent = this.parentElement.parentElement;
-  });
+    // console.log(parent)
+    let imgName = parent.querySelector("P").innerHTML;
+    alert(imgName);
+  }
  }
 // VIEW CODE END
