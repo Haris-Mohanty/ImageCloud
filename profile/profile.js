@@ -66,8 +66,3 @@ $(".del-btn").on("click", function(){
   });
 });
 // DELETE IMAGE CODE END
-
-
-// MODAL CODE START
-let closeBtn = document.querySelector(".cl-btn");
-// MODAL CODE END
