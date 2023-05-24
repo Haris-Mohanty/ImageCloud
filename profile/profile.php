@@ -147,7 +147,7 @@ if($user_res -> num_rows != 0)
                     <div class="modal-title">
                         Haris Mohanty
                     </div>
-                    <button type="button" class="btn-close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     <img src="../Image/bg-2.jpg" class="w-100" alt="">
