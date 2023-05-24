@@ -141,7 +141,15 @@ if($user_res -> num_rows != 0)
 
     <!-- MODAL CODE START -->
     <div class="modal">
-        
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Haris Mohanty
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- MODAL CODE END -->
     
