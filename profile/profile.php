@@ -140,7 +140,7 @@ if($user_res -> num_rows != 0)
 
 
     <!-- MODAL CODE START -->
-    <div class="modal" id="myModal">
+    <div class="modal" id="my-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
