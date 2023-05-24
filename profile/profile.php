@@ -140,14 +140,14 @@ if($user_res -> num_rows != 0)
 
 
     <!-- MODAL CODE START -->
-    <div class="modal animate__animated animate_bounce" id="my-modal">
+    <div class="modal animate__animated animate__backInDown" id="my-modal">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">
                         Haris Mohanty
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <button type="button" class="btn-close cl-btn" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     <img src="../Image/bg-2.jpg" class="w-100" alt="">

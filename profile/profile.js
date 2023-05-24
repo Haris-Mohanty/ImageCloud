@@ -69,5 +69,5 @@ $(".del-btn").on("click", function(){
 
 
 // MODAL CODE START
-let myModal = document.querySelector("#my-modal");
+let closeBtn = document.querySelector(".cl-btn");
 // MODAL CODE END
