@@ -141,15 +141,16 @@ if($user_res -> num_rows != 0)
 
     <!-- MODAL CODE START -->
     <div class="modal" id="my-modal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">
                         Haris Mohanty
                     </div>
+                    <button type="button" class="btn-close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="../Image/bg-2.jpg" alt="">
+                    <img src="../Image/bg-2.jpg" class="w-100" alt="">
                 </div>
             </div>
         </div>
