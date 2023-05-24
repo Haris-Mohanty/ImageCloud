@@ -140,7 +140,7 @@ if($user_res -> num_rows != 0)
 
 
     <!-- MODAL CODE START -->
-    <div class="modal">
+    <div class="modal" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -149,7 +149,7 @@ if($user_res -> num_rows != 0)
                     </div>
                 </div>
                 <div class="modal-body">
-                    
+                    <img src="../Image/bg-2.jpg" alt="">
                 </div>
             </div>
         </div>
