@@ -69,4 +69,5 @@ $(".del-btn").on("click", function(){
 
 
 // MODAL CODE START
+let myModal = document.querySelector("#my-modal");
 // MODAL CODE END
