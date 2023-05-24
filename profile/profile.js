@@ -66,3 +66,7 @@ $(".del-btn").on("click", function(){
   });
 });
 // DELETE IMAGE CODE END
+
+
+// MODAL CODE START
+// MODAL CODE END
