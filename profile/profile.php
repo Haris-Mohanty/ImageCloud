@@ -140,7 +140,7 @@ if($user_res -> num_rows != 0)
 
 
     <!-- MODAL CODE START -->
-    <div class="modal" id="my-modal">
+    <div class="modal animate__animated animate_bounce" id="my-modal">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
