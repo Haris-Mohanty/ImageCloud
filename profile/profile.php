@@ -140,6 +140,9 @@ if($user_res -> num_rows != 0)
 
 
     <!-- MODAL CODE START -->
+    <div class="modal">
+        
+    </div>
     <!-- MODAL CODE END -->
     
 </body>
