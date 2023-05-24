@@ -69,5 +69,11 @@ $(".del-btn").on("click", function(){
 
 
 // VIEW CODE START
-
+let allViewBtn = document.querySelectorAll(".view-btn");
+ let i;
+ for(i=0; i<allViewBtn.length; i++){
+  allViewBtn[i].addEventListener("click", ()=>{
+    let parent = this.parentElement.parentElement;
+  });
+ }
 // VIEW CODE END
