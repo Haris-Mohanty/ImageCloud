@@ -150,7 +150,7 @@ if($user_res -> num_rows != 0)
                     <button type="button" class="btn-close cl-btn" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="../Image/bg-2.jpg" class="w-100" alt="">
+                    <img src="" class="w-100 img-box" alt="">
                 </div>
             </div>
         </div>

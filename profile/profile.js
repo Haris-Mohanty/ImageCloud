@@ -75,8 +75,9 @@ let allViewBtn = document.querySelectorAll(".view-btn");
   allViewBtn[i].onclick = function(){
     let parent = this.parentElement.parentElement;
     let imgName = parent.querySelector("P").innerHTML;
-    let imgUrl = parent.querySelector("IMG").scr;
+    let imgUrl = parent.querySelector("IMG").src;
     $(".modal-title").html(imgName);
+    $(".img-box").attr("src", imgUrl);
 
   }
  }
