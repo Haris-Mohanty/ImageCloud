@@ -137,6 +137,10 @@ if($user_res -> num_rows != 0)
         </div>
     </div>
     <!-- MAIN PAGE CODE END -->
+
+
+    <!-- MODAL CODE START -->
+    <!-- MODAL CODE END -->
     
 </body>
 <script src="profile.js"></script>
