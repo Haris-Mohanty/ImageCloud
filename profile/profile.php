@@ -148,6 +148,9 @@ if($user_res -> num_rows != 0)
                         Haris Mohanty
                     </div>
                 </div>
+                <div class="modal-body">
+                    
+                </div>
             </div>
         </div>
     </div>
