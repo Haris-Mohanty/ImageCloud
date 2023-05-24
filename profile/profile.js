@@ -75,7 +75,9 @@ let allViewBtn = document.querySelectorAll(".view-btn");
   allViewBtn[i].onclick = function(){
     let parent = this.parentElement.parentElement;
     let imgName = parent.querySelector("P").innerHTML;
+    let imgUrl = parent.querySelector("IMG").scr;
     $(".modal-title").html(imgName);
+
   }
  }
 // VIEW CODE END
