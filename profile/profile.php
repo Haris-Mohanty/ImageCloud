@@ -145,7 +145,7 @@ if($user_res -> num_rows != 0)
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">
-                        Haris Mohanty
+                        
                     </div>
                     <button type="button" class="btn-close cl-btn" data-bs-dismiss="modal"></button>
                 </div>
